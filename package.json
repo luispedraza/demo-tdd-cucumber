@@ -6,10 +6,12 @@
   "dependencies": {},
   "devDependencies": {
     "@cucumber/cucumber": "^7.0.0",
-    "chai": "^4.3.4"
+    "chai": "^4.3.4",
+    "http-server": "^0.12.3"
   },
   "scripts": {
-    "test": "./node_modules/@cucumber/cucumber/bin/cucumber-js features"
+    "test": "./node_modules/@cucumber/cucumber/bin/cucumber-js features",
+    "serve": "./node_modules/http-server/bin/http-server -p 8089 ./web"
   },
   "repository": {
     "type": "git",

@@ -10,6 +10,10 @@
 
    `npm i -D chai`
 
-4. Opcional: Crear repositorio
+4. Instalar servidor http
 
-   `git init`
+   `npm i -D http-server`
+
+- Opcional: Crear repositorio
+
+  `git init`

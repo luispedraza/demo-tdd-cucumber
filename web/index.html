@@ -1,0 +1,29 @@
+<html>
+  <body>
+    <div>
+      <label for="nameInput"
+        >Nombre completo:
+        <input id="nameInput" name="nameInput" type="text" />
+      </label>
+      <br />
+      <label for="ciInput"
+        >Cédula de identidad:
+        <input id="ciInput" name="ciInput" type="number" />
+      </label>
+      <br />
+      <button id="sendButton" onclick="show()">Enviar</button>
+    </div>
+    <div>
+      Resultado:
+      <span id="result" name="result"></span>
+    </div>
+    <script>
+      function show() {
+        const name = document.getElementById('nameInput').value
+        const ci = document.getElementById('ciInput').value
+        const result = `${name}-${ci}`
+        document.getElementById('result').innerHTML = result
+      }
+    </script>
+  </body>
+</html>
