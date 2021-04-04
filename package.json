@@ -1,0 +1,25 @@
+{
+  "name": "cucumber-bdd",
+  "version": "1.0.0",
+  "description": "1. Crear un proyecto node    npm init -y",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.0.0",
+    "chai": "^4.3.4"
+  },
+  "scripts": {
+    "test": "./node_modules/@cucumber/cucumber/bin/cucumber-js features"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertop87/cucumber-bdd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robertop87/cucumber-bdd/issues"
+  },
+  "homepage": "https://github.com/robertop87/cucumber-bdd#readme"
+}
