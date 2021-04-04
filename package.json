@@ -1,0 +1,17 @@
+{
+  "name": "cucumber-bdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.0.0",
+    "@types/chai": "^4.2.16",
+    "chai": "^4.3.4"
+  }
+}
