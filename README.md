@@ -14,6 +14,14 @@
 
    `npm i -D http-server`
 
+5. Instalar selenium
+
+   `npm i -D selenium-webdriver`
+
+6. Instalar chromedriver
+
+   `npm i -D chromedriver --global`
+
 - Opcional: Crear repositorio
 
   `git init`
