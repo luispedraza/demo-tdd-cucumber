@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "tsc && ./node_modules/@cucumber/cucumber/bin/cucumber-js features"
+    "test": "tsc && cucumber-js features"
   },
   "keywords": [],
   "author": "",
