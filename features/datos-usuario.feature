@@ -5,7 +5,13 @@ Feature: Mostrar confirmación de registro
 
     Scenario: Se registran datos válidos de nombre y ci
         Given Usuario ingresa a la plataforma
-        When Ingresa nombre "Roberto"
-        And Ingresa CI 1234567
+        When Ingresa nombre <nombre>
+        And Ingresa CI <ci>
         And Envia los datos
-        Then Debe recibir el codigo "Roberto-1234567"
+        Then Debe recibir el codigo <resultado>
+
+        Examples:
+            | nombre | ci   | resultado  |
+            | Luis   | 1234 | Luis-1234  |
+            | Laura  | 0012 | Laura-0012 |
+            | Pepe   | 2323 | Pepe-2323  |
