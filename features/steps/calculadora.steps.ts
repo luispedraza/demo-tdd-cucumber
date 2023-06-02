@@ -4,10 +4,12 @@ import { expect } from 'chai'
 
 let calculator: Calculator
 let sum: number
+let mult: number
 
-Given("Una calculadora", () => {
+Given("Tengo una calculadora", () => {
   calculator = new Calculator()
 });
+
 
 When("Se ingresan {int} y {int}", (num1: number, num2: number) => {
   // When('Se ingresan {int} y {float}', function (int, float) {
@@ -22,3 +24,16 @@ Then("El resultado debe ser {int}", (result: number) => {
   // Write code here that turns the phrase above into concrete actions
   expect(sum).to.be.equal(result)
 });
+
+
+When('ingreso los numeros {int} y {int} para multiplicar', function (number1: number, number2:number) {
+  // When('ingreso los numeros {int} y {float} para multiplicar', function (int, float) {    
+  // When('ingreso los numeros {float} y {int} para multiplicar', function (float, int) {    
+  // When('ingreso los numeros {float} y {float} para multiplicar', function (float, float2) {
+    // Write code here that turns the phrase above into concrete actions
+    mult = calculator.mult(number1, number2)
+  });
+
+  Then('el resultado debe ser {int}', function (result: number) {
+    expect(mult).to.be.equal(result)
+  });
