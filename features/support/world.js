@@ -1,6 +1,6 @@
 const { setWorldConstructor } = require('@cucumber/cucumber')
 const { Builder } = require('selenium-webdriver')
-
+require('chromedriver')
 class Calculator {
   sum(a, b) {
     return a + b
